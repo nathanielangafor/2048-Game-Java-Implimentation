@@ -12,16 +12,17 @@ Playthrough Logic:
         - Check if the board has at least one free space
         - If both are true, continue. Otherwise, print the appropriate messages and break
 
-    1. If the user inserts a valid move
-        1.1. Transpose the array to get rid of all blank spots
-        1.2. Perform a merge to combine points
-        1.3. Transpose the board again to get rid of any blank spots created in 1.1
-    
-    2. If the user inserts an invalid move
-        2.1. Do nothing, prompt the user for another move
+        1. If the user inserts a valid move
+            1.1. Transpose the array to get rid of all blank spots
+            1.2. Perform a merge to combine points
+            1.3. Transpose the board again to get rid of any blank spots created in 1.1
+
+        2. If the user inserts an invalid move
+            2.1. Do nothing, prompt the user for another move
 
 
 Functions:
+    
     1. validPoints(int[][] board) / Return Type: List<int[]> 
         Explanation:
             Iterates through the array and returns a list of arrays. Each array holds a valid point within the matrix.
